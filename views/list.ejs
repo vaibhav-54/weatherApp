@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather page</title>
+    <style>
+        body{
+            background-color:orangered;
+        }
+        .container{
+            
+            color: cornsilk;
+            background-color:orangered
+        }
+        .foot{
+            margin-top: 430px;
+            height: 100px;
+      color: papayawhip;
+      background-color: black;
+    }
+    </style>
+
+</head>
+<body>
+   <div class="container">
+    <h3>
+        <p>
+             <H1><%=tem %>°C ,<%=d%></H1>
+            <br>
+            feels like:<%=fl %>°C <br>
+            min temp:<%=mt %>°C <br>
+            max temp:<%=mxt%>°C <br>
+            humidity:<%=h%> % <br>
+
+        </p>
+    </h3>
+   </div>
+   <form action="/list.ejs" method="POST">
+        <button type="submit" size=" 100px">GO Back</button>
+
+</form>
+<div class="foot">
+    <h2>DEVELOPER</h2>
+    <H3>Vaibhav Singh Chauhan <br>
+        contact:-vaibhavsinghchauhan54@gmail.com
+    </H3>
+  </div>
+</body>
+</html>
